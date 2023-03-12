@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    
+    <!-- Font Quicsand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Output Css -->
+    <link href="/public/css/output.css" rel="stylesheet">
+    <title>Foodyar Tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+</head>
+<body>
+    
+    <!-- Navbar & Navigation -->
+    <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="https://flowbite.com/" class="flex items-center">
+            <img src="./assets/images/🍔.png" mr-3 h-6 sm:h-9" alt="Logo">
+            <span style="font-family: 'Quicksand', sans-serif;" class="self-center text-Quicksand text-xl font-semibold whitespace-nowrap dark:text-white">Foodyar</span>
+        </a>
+        <div style="font-family: 'Quicksand', sans-serif;"class="flex md:order-2" id="mobile-menu-button">
+            <button type="button" class="mr-3 rounded-lg rounded-t-3xl bg-pink-300 px-5 py-2.5 text-center text-sm font-semibold text-black hover:bg-pink-400 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:mr-0">My Kitchen</button>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+        </div>
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul style="position: absolute;
+                    right: 175px;
+                    font-family: 'Quicksand', sans-serif;" 
+                    class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-bold md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 dark:text-white" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Beverages</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Chef</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Ingredient</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Stories</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="hidden mt-5 shadow-md shadow-slate-600" id="mobile-menu">
+            <ul style="position: absolute;
+                top: 45px;
+                right: 6px;
+                width: 370px;
+                font-family: 'Quicksand', sans-serif;" 
+                class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-bold md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-white bg-pink-400 rounded hover:text-pink-400 md:p-0 dark:text-white" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Beverages</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Chef</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Ingredient</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Stories</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav> <!-- End Navbar & Navigation -->
+
+    <!-- Home -->
+    <header id="header" class="header -mt-36 py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+        <div class="container absolute mt-32 px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+            <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                <h1 style="left: 10px;
+                font-family: 'Quicksand', sans-serif;
+                position: relative;
+                top: 1px;" class="text-center items-baseline -mt-10 h1-large mb-5 text-5xl font-bold bg-clip-text bg-gradient-to-r text-black">Eat What You Cook<br>With Us, Together!</h1>
+                <p style="font-family: 'Quicksand', sans-serif; position: relative;
+                right: -2px;;" class="text-center items-baseline font-semibold h-11 mb-8 text-gray-400">When you eat something that cooked by
+                    <br>yourself, the happiness is priceless.</p>
+            </div>
+            <div class="flex text-center items-center md:order-5">
+                <button style="    position: relative;
+                font-family: Quicksand;
+                width: 192px;
+                top: -50px;
+                left: 90px;" class="rounded-b-lg rounded-t-3xl bg-orange-400 hover:bg-pink-400 text-white font-bold py-2 px-4 rounded">
+                    Button
+                </button>
+            </div>
+            <div class="xl:text-right">
+                <img style="position: relative;
+                top: -45px;" class="inline" src="./assets/images/pic.png" alt="alternative" />
+            </div>
+        </div>
+    </header><!-- end of Home -->
+
+
+    <div class="-mt-36 py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+        <div class="container absolute mt-32 px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+            <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                <h1 style="left: 360px;
+                font-family: 'Quicksand', sans-serif;
+                position: relative;
+                top: 210px;" class="text-center items-baseline mt-5 h1-large mb-5 text-2xl font-bold bg-clip-text bg-gradient-to-r text-black">Special to Try</h1>
+                <p style="font-family: 'Quicksand', sans-serif; position: relative;
+                    top: 136px;
+                right: -362px;" class="text-center items-baseline font-semibold h-8 mb-8 text-gray-400">Watch Now
+                </p>
+            </div>
+            <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                <p style="font-family: 'Quicksand', sans-serif; position: relative;
+                top: 268px;
+                right: 280px;" class="text-center items-baseline font-semibold h-8 mb-8 text-gray-900">Healthy Food Lunch Vege Desert Shake
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div style="top: 460px;
+    left: 80px;" class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14 space-x-9">
+        <div class="snap-center shrink-0">
+            <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+            <div class="snap-center shrink-0">
+                <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="./assets/images/image 4.png" alt="">
+                <h1>Salad Kiwi Sugga</h1>
+                <p>Amir Samantha</p>
+                <span>
+                    <img src="./assets/images/stars.png" alt="" />
+                </span>
+            </div>
+            <div class="snap-center shrink-0">
+                <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="./assets/images/image 5.png" alt="">
+                <h1>Avocado Muscle</h1>
+                <p>John Lennonk</p>
+                <span>
+                    <img src="./assets/images/stars.png" alt="" />
+                </span>
+            </div>
+            <div class="snap-center shrink-0">
+                <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="./assets/images/image 6.png" alt="">
+                <h1>Bayam Red Poppeye</h1>
+                <p>Toekang Sayoer</p>
+                <span>
+                    <img src="./assets/images/stars.png" alt="" />
+                </span>
+            </div>
+            <div class="snap-center shrink-0">
+                <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="./assets/images/image 7.png" alt="">
+                <h1>Naga Fruity Joss</h1>
+                <p>Imelda Saranghae</p>
+                <span>
+                    <img src="./assets/images/stars.png" alt="" />
+                </span>
+            </div>
+        <div class="snap-center shrink-0">
+            <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+    </div>
+
+    <div class="-mt-36 py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+        <div class="container absolute mt-32 px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+            <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                <h1 style="left: 360px;
+                font-family: 'Quicksand', sans-serif;
+                position: relative;
+                top: 210px;" class="text-center items-baseline -mt-10 h1-large mb-5 text-5xl font-bold bg-clip-text bg-gradient-to-r text-black">Awalnya saya malu dengan mertua karena<br>
+                tidak bisa memasak, kini mereka lebih suka
+                makan malam di rumah demi menyantap<br>
+                masakan yang saya buat sendiri</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div style="top: 800px;
+        left: 450px;" class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14 space-x-9">
+            <div class="snap-center shrink-0">
+                <div class="shrink-0 w-4 sm:w-48"></div>
+            </div>
+        <div class="snap-center shrink-0">
+            <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="./image/user.png" alt="">
+        </div>
+        <div class="snap-center shrink-0">
+            <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+    </div>
+
+    <div class="-mt-36 py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+        <div class="container absolute mt-32 px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+            <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                <h1 style="left: -90px;
+                font-family: 'Quicksand', sans-serif;
+                position: relative;
+                top: 500px;" class="text-center items-baseline mt-5 h1-large mb-5 text-2xl font-bold bg-clip-text bg-gradient-to-r text-black">180.000+</h1>
+                <p style="font-family: 'Quicksand', sans-serif; position: relative;
+                    top: 480px;
+                right: 93px;" class="text-center items-baseline font-semibold h-8 mb-8 text-gray-400">MENU FOOD
+                </p>
+            </div>
+            <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                <h1 style="left: 200px;
+                font-family: 'Quicksand', sans-serif;
+                position: relative;
+                top: 500px;" class="text-center items-baseline mt-5 h1-large mb-5 text-2xl font-bold bg-clip-text bg-gradient-to-r text-black">6.900.000</h1>
+                <p style="font-family: 'Quicksand', sans-serif; position: relative;
+                    top: 480px;
+                right: -200px;" class="text-center items-baseline font-semibold h-8 mb-8 text-gray-400">ALUMNI
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="-mt-36 py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+        <div class="container absolute mt-32 px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+            <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                <h1 style="left: 150px;
+                font-family: 'Quicksand', sans-serif;
+                position: relative;
+                top: 340px;" class="text-center items-baseline mt-5 h1-large mb-5 text-2xl font-bold bg-clip-text bg-gradient-to-r text-black">20.000+</h1>
+                <p style="font-family: 'Quicksand', sans-serif; position: relative;
+                    top: 320px;
+                right: -150px;" class="text-center items-baseline font-semibold h-8 mb-8 text-gray-400">CHEFS
+                </p>
+            </div>
+            <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                <h1 style="left: -150px;
+                font-family: 'Quicksand', sans-serif;
+                position: relative;
+                top: 340px;" class="text-center items-baseline mt-5 h1-large mb-5 text-2xl font-bold bg-clip-text bg-gradient-to-r text-black">400.000+</h1>
+                <p style="font-family: 'Quicksand', sans-serif; position: relative;
+                    top: 320px;
+                right: 150px;" class="text-center items-baseline font-semibold h-8 mb-8 text-gray-400">COURSE
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="header -mt-36 py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+        <div class="container absolute mt-32 px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+            <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                <h1 style="left: 600px;
+                font-family: 'Quicksand', sans-serif;
+                position: relative;
+                top: 500px;" class="text-center items-baseline -mt-10 h1-large mb-5 text-5xl font-bold bg-clip-text bg-gradient-to-r text-black">Download our app<br>and join the contest</h1>
+                <p style="font-family: 'Quicksand', sans-serif; position: relative;
+                left: 600px;
+                top: 500px;" class="text-center items-baseline font-semibold h-11 mb-8 text-gray-400">In order to improve our cooking skills,<br>
+                we do need a food photography </p>
+            </div>
+            <div class="xl:text-right">
+                <img style="position: relative;
+                top: 500px;
+                left: -600px;" class="inline" src="./assets/images/pic5.png" alt="" />
+            </div>
+            <div>
+                <img style="position: relative;
+                top: 260px;
+                left:700px;" src="./assets/images/apple.png" alt="" />
+                <img style="position: relative;
+                left: 880px;
+                top: 212px;
+                " src="./assets/images/playstore.png" />
+            </div>
+        </div>
+    </div>
+
+
+    <footer style="font-family: Quicksand; top: 1239px;
+    position: relative;" class="p-4 bg-white sm:p-6 dark:bg-gray-900">
+        <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a style="font-family: Quicksand;
+                top: 1px;" href="./assets/images/🍔 (1).png" class="flex items-center">
+                    <img src="./assets/images/🍔 (1).png" class="mr-3 h-8" alt="Foodyar">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Foodyar</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div style="font-family: Quicksand;
+                position: relative;
+                left: 300px;
+                top: 118px;">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Special Course</h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-0">
+                            <a href="#" class="hover:underline">Wedding Foods</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Healthy and Muscle</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Office Food Daily</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Happy Kids</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="font-family: Quicksand;
+                position: relative;
+                left: 520px;
+                top: -1px;">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-0">
+                            <a href="#" class="hover:underline ">APIs Developer</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Career</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="font-family: Quicksand;
+                position: relative;
+                left: 720px;
+                top: -116px;">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Be Our Friend</h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-0">
+                            <a href="#" class="hover:underline">3, Season Park, Jakarta</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">support@foodyar.co,id</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">021 - 1111 - 2222</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"><a href="#" class="hover:underline">All Rights Reserved Foodyar by Pixel from BuildWith Angga 2020
+            </span>
+        </div>
+    </footer>
+    
+    <script src="/public/js/script.js"></script>
+</body>
+</html>
